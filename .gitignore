@@ -1,0 +1,10 @@
+# eclipse project file
+.settings/
+.classpath
+.project
+
+# class files
+bin/
+
+# MAC OS
+.DS_Store
