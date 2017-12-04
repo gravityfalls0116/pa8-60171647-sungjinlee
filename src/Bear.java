@@ -5,8 +5,8 @@
 public class Bear implements Drawable{
 	private Drawable[] bearShape=new Drawable[3];
 	public Bear(int x, int y, int radius){
-		Shape mainSquare=new Square(x-radius,y-radius,radius*2);
-		//기존의 square 클래스는 생성할때 좌상단 꼭지점을 기준으로 생성하지만, Bear클래스는 사각형의 중심점을 기준으로 하므로 그에 알맞게 값을 수정하여 메인사각형을 생성함.
+		Shape mainSquare=new Rectangle(x-radius,y-radius,x+radius,y+radius);
+		//기존의 Rectangle 클래스는 생성할때 좌상단 꼭지점을 기준으로 생성하지만, Bear클래스는 사각형의 중심점을 기준으로 하므로 그에 알맞게 값을 수정하여 메인사각형을 생성함.
 		Shape Circle1=new Circle(x-radius,y-radius,radius/2);
 		Shape Circle2=new Circle(x+radius,y-radius,radius/2);
 		//사각형의 좌우상단 꼭지점을 중심점으로 원 두개를 생성함.
